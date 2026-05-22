@@ -1,0 +1,61 @@
+{
+  "name": "hermes-agent",
+  "version": "1.0.0",
+  "description": "The self-improving AI agent \u2014 creates skills from experience, improves them during use, and runs anywhere. Bun-based TypeScript implementation.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "tsc --outDir dist",
+    "start": "node dist/index.js",
+    "cli": "bun src/cli/index.ts",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write src",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "enquirer": "^2.4.1",
+    "jsonwebtoken": "^9.0.0",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.67.0",
+    "ora": "^8.0.1",
+    "p-retry": "^6.2.0",
+    "pidusage": "^3.0.2",
+    "pino": "^9.2.0",
+    "pino-pretty": "^10.3.1",
+    "undici": "^6.19.0",
+    "yaml": "^2.4.2",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20.14.2",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.9.3",
+    "vitest": "^1.6.0",
+    "@vitest/ui": "^1.6.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "prettier": "^3.3.3"
+  },
+  "optionalDependencies": {
+    "anthropic": "^0.35.0",
+    "discord.js": "^14.15.2",
+    "telegraf": "^4.16.0",
+    "slack-bolt": "^3.19.0",
+    "aws-sdk": "^2.1622.0",
+    "@azure/identity": "^4.4.0",
+    "elevenlabs": "^0.2.27"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "bun": ">=1.0.0"
+  }
+}
