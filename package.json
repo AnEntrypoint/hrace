@@ -1,7 +1,7 @@
 {
   "name": "hermes-agent",
   "version": "1.0.0",
-  "description": "The self-improving AI agent — creates skills from experience, improves them during use, and runs anywhere. Bun-based TypeScript implementation.",
+  "description": "The self-improving AI agent \u2014 creates skills from experience, improves them during use, and runs anywhere. Bun-based TypeScript implementation.",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
@@ -16,21 +16,22 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "openai": "^4.67.0",
-    "undici": "^6.19.0",
-    "zod": "^3.23.0",
-    "yaml": "^2.4.2",
-    "commander": "^12.1.0",
     "chalk": "^5.3.0",
-    "ora": "^8.0.1",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
     "enquirer": "^2.4.1",
     "jsonwebtoken": "^9.0.0",
     "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.67.0",
+    "ora": "^8.0.1",
     "p-retry": "^6.2.0",
     "pidusage": "^3.0.2",
-    "dotenv": "^16.4.5",
     "pino": "^9.2.0",
-    "pino-pretty": "^10.3.1"
+    "pino-pretty": "^10.3.1",
+    "undici": "^6.19.0",
+    "yaml": "^2.4.2",
+    "zod": "^3.23.0"
   },
   "devDependencies": {
     "@types/bun": "latest",
