@@ -1,0 +1,24 @@
+[build]
+# Entry points for compilation
+entrypoints = ["./src/index.ts"]
+outdir = "./dist"
+minify = true
+sourcemap = "external"
+
+[test]
+# Vitest configuration for bun
+root = "./src"
+preload = ["./test/setup.ts"]
+
+[define]
+# Environment variables for build
+"process.env.NODE_ENV" = "\"production\""
+
+[loader]
+# Custom loader configuration
+".yaml" = "file"
+".yml" = "file"
+
+[packageManager]
+# Use bun as the default package manager
+manager = "bun"
